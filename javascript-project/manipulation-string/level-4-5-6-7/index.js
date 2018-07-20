@@ -11,3 +11,5 @@ console.log(mystring + ", " +  mystring1);
 * mystring1 together 
  with ", " in between
  */
+const mystring2 = `${mystring} ${mystring1}`;
+ console.log(mystring2);
