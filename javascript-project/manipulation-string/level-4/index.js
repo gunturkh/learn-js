@@ -1,27 +1,6 @@
-var numberA = ["H","E","L","L","O"];
+var mystring = "Hello World";
 
-
-
-
-
-var result = numberA.toString(); 
-console.log(result);
-
-var result = numberA.join("_"); 
-console.log(result);
-
-var result = numberA.length; 
-console.log(result);
-
-var result = numberA.includes("E"); 
-console.log(result);
-
-var result = numberA.push("!"); 
-console.log(result);
-
-var result = numberA.pop(); 
-console.log(result);
-
-
-
-
+console.log(mystring.charAt(4)); //return o as result
+console.log(mystring.charCodeAt(4)); //return '111' as Unicode of 'o' 
+console.log(mystring.toUpperCase()); //return HELLO WORLD
+console.log(mystring.toLowerCase()); // return hello world
