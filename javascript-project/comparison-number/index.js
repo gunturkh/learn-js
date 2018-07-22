@@ -57,5 +57,5 @@ function randomnum (min,max) {
     var resultnum =Math.floor(Math.random() * (max-min)) + min
     console.log(resultnum)
 }
-randomnum(0,100)
+randomnum(0,10)
 
