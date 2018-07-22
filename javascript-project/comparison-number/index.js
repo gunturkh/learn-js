@@ -36,3 +36,26 @@ var conditionnum1 = 10>=comparisonnum && comparisonnum>=5
 var conditionnum2 = comparisonnum>2
 console.log(conditionnum1)
 console.log(conditionnum2)
+
+//level-12
+
+function process (par1, par2) {
+    var con = par1>=par2
+    if (con === true) {
+        console.log(`${par1} is bigger than ${par2} `)
+    }
+    else {
+        console.log(`${par1} is smaller/equal than ${par2} `)
+    }
+}
+
+process(1,2)
+
+//level-13
+
+function randomnum (min,max) {
+    var resultnum =Math.floor(Math.random() * (max-min)) + min;
+    console.log(resultnum)
+}
+randomnum(0,100)
+
