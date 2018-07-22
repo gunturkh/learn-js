@@ -54,7 +54,7 @@ process(1,2)
 //level-13
 
 function randomnum (min,max) {
-    var resultnum =Math.floor(Math.random() * (max-min)) + min;
+    var resultnum =Math.floor(Math.random() * (max-min)) + min
     console.log(resultnum)
 }
 randomnum(0,100)
