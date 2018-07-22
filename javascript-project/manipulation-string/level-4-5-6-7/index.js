@@ -16,7 +16,19 @@ console.log(mystring.concat(", ",mystring1));
 const mystring2 = `${mystring} ${mystring1}`;
  console.log(mystring2);
 
-var mystring3 = "i am fine";
-console.log(mystring3.concat("!"));
-console.log(mystring3)
-console.log(mystring3.replace("i am fine","I Am Fine"));
+var mystring3 = "guntur kurniawan heryanto";
+
+
+
+
+
+var str = mystring3.split(' ');
+for(var i=0; i<str.length; i++)
+{
+    str[i] = str[i].charAt(0).toUpperCase()+str[i].slice(1);
+}
+var mystring4 = str.join(' ');
+console.log(mystring4);
+
+
+
