@@ -59,3 +59,14 @@ function randomnum (min,max) {
 }
 randomnum(0,10)
 
+//built-in JS method
+const names = [
+    "guntur",
+    "arie",
+    "alif"
+]
+
+const namesFiltered = names.filter(function(names){return names.length >2});
+
+console.log("names:", names);
+console.log("filtered names: ", namesFiltered);
