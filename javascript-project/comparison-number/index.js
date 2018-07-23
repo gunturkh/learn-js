@@ -66,6 +66,7 @@ const names = [
     "alif"
 ]
 
+
 const namesFiltered = names.filter(function(names){return names.length >2});
 
 console.log("names:", names);
