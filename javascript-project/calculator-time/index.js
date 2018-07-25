@@ -1,4 +1,5 @@
 const timeForm = $("time-form")
+const resultInSecondForm = $("result-in-second")
 
 
 // Time Functions
@@ -10,10 +11,14 @@ const minuteToHour = (a) => Number(a / 60)
 const secondToMinute = (a) => Number(a / 60)
 const secontToHour = (a) => Number(a/3600)
 
-const addDOM = (event) => {
+const timeDOM = (event) => {
     event.preventDefault()
-    const addFirst = Number(document.getElementById("add-1").value)
-    const addSecond = Number(document.getElementById("add-2").value)
-    if (addFirst && addSecond) addResult.innerHTML = add(addFirst, addSecond)
+    const hourValue = Number($("hour").value)
+    const minuteValue = Number($("minute").value)
+    const secondValue = Number($("second").value)
+    if (hourValue && minuteValue && secondValue) resultInSecondForm.innerHTML = hourToSecond(a)
 
 }
+
+// Event Listener
+timeForm.on("submit", timeDOM)
