@@ -3,6 +3,8 @@ $(function () {
     const resultInSecondForm = $("#result-in-second-form")
     const resultInMinuteForm = $("#result-in-minute-form")
     const resultInHourForm = $("#result-in-hour-form")
+    const dateForm = $("#date-form")
+    const dateOutput = $("#date-output")
 
 
 
@@ -34,7 +36,15 @@ $(function () {
 
     }
 
+    const dateDOM = (event) => {
+
+        event.preventDefault()
+        const now = new Date()
+        dateOutput.text(now)
+    }
+
     // Event Listener
     timeForm.on("submit", timeDOM)
+    dateForm.on("submit", dateDOM)
 })
 
