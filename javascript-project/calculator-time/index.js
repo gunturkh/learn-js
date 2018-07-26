@@ -4,7 +4,6 @@ $(function () {
     const resultInMinuteForm = $("#result-in-minute-form")
     const resultInHourForm = $("#result-in-hour-form")
     const dateForm = $("#date-form")
-    const dateOutput = $("#date-output")
 
 
 
@@ -37,10 +36,11 @@ $(function () {
     }
 
     const dateDOM = (event) => {
-
         event.preventDefault()
         const now = new Date()
+        const dateOutput = $("#date-output")
         dateOutput.text(now)
+
     }
 
     // Event Listener
