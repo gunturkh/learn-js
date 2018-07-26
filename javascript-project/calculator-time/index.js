@@ -39,16 +39,17 @@ $(function () {
         event.preventDefault()
         const now = new Date()
         const hourNow = now.getHours()
+        const minuteNow = now.getMinutes()
         const dateOutput = $("#date-output")
         const dateOutput1 = $("#date-output-1")
         dateOutput.text(now)
 
         if (now.getHours() === 12) {
-            dateOutput1.text(`${hourNow} O'Clock is lunch time`)
+            dateOutput1.text(`${hourNow}:${minuteNow}  is lunch time`)
         }
         else {
 
-            dateOutput1.text(`${hourNow} O'Clock is not a lunch time`)
+            dateOutput1.text(`${hourNow}:${minuteNow} is not a lunch time`)
         }
 
     }
