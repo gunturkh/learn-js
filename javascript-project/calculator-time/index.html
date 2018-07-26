@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -24,20 +24,21 @@
 
                 <div class="form-group">
                     <label for="hour-form">Hour</label>
-                    <input type="number" class="form-control" id="hour" placeholder="Hour">
+                    <input type="number" class="form-control" id="hour-input" placeholder="0">
                 </div>
 
                 <div class="form-group">
                     <label for="minute-form">Minute</label>
-                    <input type="number" class="form-control" id="minute" placeholder="Minute">
+                    <input type="number" class="form-control" id="minute-input" placeholder="0">
                 </div>
 
                 <div class="form-group">
                     <label for="second-form">Second</label>
-                    <input type="number" class="form-control" id="second" placeholder="Second">
+                    <input type="number" class="form-control" id="second-input" placeholder="0">
                 </div>
 
             </div>
+
 
             <div class="row justify-content-center">
 
@@ -45,21 +46,55 @@
 
             </div>
 
+
+
+        </form>
+
+        <form id="result-form">
+
             <div class="row justify-content-center">
 
                 <div class="form-group">
-                    <h3 class="result" id="result-in-second">Result</h3>
+                    <label for="result-in-second">Result in Second</label>
+                    <output type="number" class="form-control" id="result-in-second-form">0</output>
+
                 </div>
 
             </div>
+
+            <div class="row justify-content-center">
+
+                <div class="form-group">
+                    <label for="result-in-minute">Result in Minute</label>
+                    <output type="number" class="form-control" id="result-in-minute-form">0</output>
+
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="form-group">
+                    <label for="result-in-hour">Result in Hour</label>
+                    <output type="number" class="form-control" id="result-in-hour-form">0</output>
+
+                </div>
+
+            </div>
+
         </form>
     </div>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    
+
 </body>
 
 </html>
